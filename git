@@ -1,0 +1,37 @@
+## Initial Setup
+
+### Quick Start
+git remote -v             # which remote repositories are you connected to? 
+git init                  # initialize a new .git folder which will allow you to track local commits
+git remote add origin <url>   # add a new remote repo
+git branch -M <name>        # rename the branch
+
+> make sure you create your .gitignore <
+
+Example:
+--------------------------
+# Visual Studio
+.vs/
+
+# .NET build files
+bin/
+obj/
+
+# User-specific Visual Studio files
+*.user
+*.suo
+-----------------------------
+
+git add .             # add all untracked files, or specific directories thru .\example\
+git status            # verify changes to be committed
+git commit -m "example"   # your commit message
+git push -u origin <name>  # push changes
+git branch                 # view what branch you are on
+git switch -c <name>      # create a new branch and switch to it
+git switch <name>          # switch to a new branch
+git branch -d <name>       # remove branch 
+
+-------------------------------------------------------------------------
+
+git restore --staged .            # if you accidentally run git add . and stage like 30+ files you didn't mean to
+git fetch origin                  # pull updates without merging
