@@ -35,3 +35,6 @@ git branch -d <name>       # remove branch
 
 git restore --staged .            # if you accidentally run git add . and stage like 30+ files you didn't mean to
 git fetch origin                  # pull updates without merging
+
+
+map_workshop 3114216642 dc_preparation_map
